@@ -514,6 +514,73 @@
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+   let addLink = function () {
+     let link = document.createElement("a")
+     document.querySelector("nav").appendChild(link)
+
+   }
+
+   let change = function (color) {
+     let title = document.getElementsByClassName("blog-header-logo")[0]
+     title.style.color = color
+   }
+
+   let changeJ = function (color) {
+     let title = document.getElementsByClassName("jumbotron")[0]
+     title.style.backgorundColor = color
+   }
+
+   let elseW = function (){
+    const fakeImages = document.querySelectorAll(".blog-sidebar a")
+    console.log(fakeImages)
+    for(i=0;i<fakeImages.length; i++){
+      fakeImages[i].remove()
+    }
+  }
+
+    let ciao = function (){
+    const fakeImages = document.querySelectorAll(".blog-main h2")
+    console.log(fakeImages)
+    for(i=0;i<fakeImages.length; i++){
+      fakeImages[i].style.fontSize = "x-large"
+    }
+  } 
+
+  let trim = function (){
+    const fakeImages = document.querySelectorAll(".blog-post p")
+    console.log(fakeImages)
+    
+    for(i=0;i<fakeImages.length; i++){
+      
+      let pr = fakeImages[i].innerText
+
+      pr.slice(0,49)
+      console.log(pr)
+
+    }
+  } 
+
+  
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
     </script>
   </body>
 </html>
